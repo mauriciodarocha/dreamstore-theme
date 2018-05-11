@@ -7,6 +7,8 @@ import { ExtensionPoint } from 'render'
 
 import SearchIcon from '../images/SearchIcon'
 
+import Logo from 'vtex.storecomponents/Logo'
+
 class Header extends Component {
   constructor(props) {
     super(props)
@@ -38,9 +40,9 @@ class Header extends Component {
           <ExtensionPoint id="menu-link" />
         </div>
         <div className="z-2 flex-ns items-center w-100 top-0 pa4 pa5-ns ph7-l bg-white tl">
-          <div className="flex items-center justify-between pb3 pb0-ns">
-            <a className="link b f3 near-black tc tl-ns pr7 serious-black" href="/">
-              {name || account}
+          <div className="flex w-10-ns w-50 items-center">
+            <a className="link near-black serious-black" href="/">
+              <Logo url="https://cdn.awsli.com.br/400x300/553/553794/logo/66ef17fc03.png" title="Mi Patron Store"/>
             </a>
           </div>
           <div className="flex items-center flex-auto">
