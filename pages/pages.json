@@ -1,10 +1,21 @@
 {
+  "pages": {
+    "store/account/summary": {
+      "path": "/account/summary"
+    }
+  },
   "extensions": {
+    "store/account/summary": {
+      "component": "SummaryPage"
+    },
     "store/theme": {
       "component": "Theme"
     },
     "store/account/container/1": {
-      "component": "vtex.my-orders-app/index"
+      "component": "AccountTemplate"
+    },
+    "store/account/orders/container/1": {
+      "component": "OrderPage"
     },
     "store/header": {
       "component": "Header"
