@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { intlShape, injectIntl } from 'react-intl'
-import { Logo, SearchBar } from 'vtex.store-components'
 import { ExtensionPoint } from 'render'
 
 const TopMenu = ({ logoUrl, logoTitle, intl, fixed }) => {
@@ -15,17 +14,9 @@ const TopMenu = ({ logoUrl, logoTitle, intl, fixed }) => {
     >
       <div className="flex w-100 w-auto-ns pa4-ns items-center">
         <a className="link b f3 near-black tc tl-ns serious-black flex-auto" href="/">
-          <Logo
-            url={logoUrl}
-            title={logoTitle}
-          />
         </a>
       </div>
       <div className="flex-auto pr2 pa4">
-        <SearchBar
-          placeholder={translate('search-placeholder')}
-          emptyPlaceholder={translate('search-emptyPlaceholder')}
-        />
       </div>
       <div className="pr2 bg-black">
         <ExtensionPoint id="minicart" />
