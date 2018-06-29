@@ -8,7 +8,7 @@ class ComponentAmoreira extends Component {
   }
 
   render() {
-    return <Link page="store/home">Olá Mundo!</Link>
+    return <Link page="store/teste">Olá Teste!</Link>
   }
 }
 

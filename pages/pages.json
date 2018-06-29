@@ -1,5 +1,25 @@
 {
+  "pages": {
+    "store/amoreira": {
+      "path": "/amoreira"
+    },
+    "store/teste": {
+      "path": "/teste"
+    }
+  },
   "extensions": {
+    "store/teste": {
+      "component": "ComponentTeste"
+    },
+    "store/teste/meu-logo": {
+      "component": "vtex.store-components/Logo"
+    },
+    "store/teste/meu-footer": {
+      "component": "vtex.store-components/Footer"
+    },
+    "store/amoreira": {
+      "component": "ComponentAmoreira"
+    },
     "store/theme": {
       "component": "Theme"
     },
