@@ -32,7 +32,7 @@ class Header extends Component {
     this._timeouts = []
     document.addEventListener('message:error', this.handleError)
     document.addEventListener('item:add', this.handleItemAdd)
-    document.addEventListener('scroll', this.handleScroll)
+    // document.addEventListener('scroll', this.handleScroll)
   }
 
   componentWillUnmount() {
@@ -44,7 +44,7 @@ class Header extends Component {
 
     document.removeEventListener('message:error', this.handleError)
     document.removeEventListener('item:add', this.handleItemAdd)
-    document.removeEventListener('scroll', this.handleScroll)
+    // document.removeEventListener('scroll', this.handleScroll)
   }
 
   handleError = e => {
